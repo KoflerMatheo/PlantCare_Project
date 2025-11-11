@@ -49,11 +49,11 @@ Die Website wird aus **vier Seiten** bestehen:
 
 ## **6. Milestones**
 
-- **Woche 1:** Thema auswählen und Seitenstruktur planen  
-- **Woche 2:** HTML-Seiten erstellen (Grundgerüst & Navigation)  
-- **Woche 3:** CSS-Design gestalten (Farben, Layout, Schriftarten)  
-- **Woche 4:** Inhalte und Bilder einfügen  
-- **Woche 5:** Testen, anpassen und präsentieren  
+- Thema auswählen und Seitenstruktur planen  
+- HTML-Seiten erstellen (Grundgerüst & Navigation)  
+- CSS-Design gestalten (Farben, Layout, Schriftarten)  
+- Inhalte und Bilder einfügen  
+- Testen, anpassen und präsentieren  
 
 ---
 

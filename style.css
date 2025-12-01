@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+  background: #ffffff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #000000;
+  padding: 15px 20px;
+}
+
+
+.logo {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  transition: opacity 0.2s;
+}
+
+.menu a:hover {
+  opacity: 0.6;
+}

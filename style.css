@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #f7faff; 
+  background: #ffffff; 
   font-family: Arial, sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #0a2a43;
+  color: #2f80bd;
 }
 
 
@@ -37,7 +37,7 @@ body {
 .hamburger span {
   width: 30px;
   height: 3px;
-  background: #0d3d63;
+  background: #000000;
 }
 
 
@@ -47,8 +47,8 @@ body {
   right: 20px;
   top: 95px;
   width: 220px;
-  background: white;
-  border: 2px solid #0d3d63;
+  background: rgb(255, 255, 255);
+  border: 2px solid #000000;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,50,0.15);
   padding: 10px 0;
@@ -63,10 +63,17 @@ body {
 }
 
 .mobile-menu a:hover {
-  background: #e6f0ff;
+  background: #ffffff;
 }
 
 
 .mobile-menu.open {
+  display: block;
+}
+
+.rounded-image {
+  width: calc(100% - 40px); /* 20px links + 20px rechts */
+  border-radius: 30px;
+  margin: 20px;             /* gleiche Abstände wie Navbar */
   display: block;
 }

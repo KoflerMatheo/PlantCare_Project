@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Pflanzen Bewässerung - Bewässerungssysteme</title>
-      <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pflanzen Bewässerung - Bewässerungssysteme</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  
-<nav class="navbar">
-  <div class="navbar-content">
 
-      
-      <div class="logo">Bewässerungsanlagen</div>
+<div class="hero-banner">
 
-     
-      <div class="hamburger" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-
+  <!-- Hamburger Button -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
-  
-  <div class="mobile-menu" id="mobileMenu">
+  <!-- Dropdown Menü -->
+  <div class="mobile-menu" id="menu">
     <a href="index.html">Hauptseite</a>
     <a href="benefits.html">Benefits</a>
     <a href="products.html">Products</a>
     <a href="systems.html">Systems</a>
-</div>
+  </div>
 
-</nav>
+  <h1 class="hero-text">Entdecke mehr über Bewässerungssysteme</h1>
+
+</div>
 
 <script>
 function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("open");
+  document.getElementById("menu").classList.toggle("open");
 }
 </script>
-
-<img src="sprinkler.jpg" class="rounded-image">
 
 </body>
 </html>

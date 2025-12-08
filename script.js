@@ -1,23 +1,35 @@
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("open");
-}
-  function highlightText() {
-    let searchValue = document.getElementById("searchInput").value.toLowerCase();
+// Mobile menu toggle
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
 
-    // Elemente, die durchsucht werden dürfen
-    let elements = document.querySelectorAll("h1, p, a, li, div, span");
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+    mobileMenu.style.display = mobileMenu.classList.contains("open") ? "block" : "none";
+});
 
-    elements.forEach(el => {
+// Search highlight
+document.getElementById("searchInput").addEventListener("input", function() {
+    const searchValue = this.value.toLowerCase();
+    const body = document.body;
 
-      // ursprünglichen Text wiederherstellen
-      el.innerHTML = el.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, "$1");
-
-      if (searchValue.length > 0) {
-        let regex = new RegExp("(" + searchValue + ")", "gi");
-        el.innerHTML = el.innerHTML.replace(regex, "<span class='highlight'>$1</span>");
-      }
-
+    // Remove previous highlights
+    document.querySelectorAll("span.highlight").forEach(el => {
+        el.outerHTML = el.innerText;
     });
-  }
 
-  document.getElementById("searchInput").addEventListener("input", highlightText);
+    if (searchValue.length > 0) {
+        highlightText(body, searchValue);
+    }
+});
+
+function highlightText(element, search) {
+    if (element.children.length === 0 && element.innerText.toLowerCase().includes(search)) {
+        let newHTML = element.innerHTML.replace(
+            new RegExp(search, "gi"),
+            match => `<span class="highlight">${match}</span>`
+        );
+        element.innerHTML = newHTML;
+    } else {
+        [...element.children].forEach(child => highlightText(child, search));
+    }
+}

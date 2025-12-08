@@ -3,16 +3,17 @@ body {
   margin: 0;
   padding: 0;
   background: #f7fbfc;
-  color: #103b40;
+  color: #000000;
 }
 
 /* Header */
 .page-header {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #4fc3f7, #81c784);
+  background: linear-gradient(135deg, #74fbeb, #1ea89d);
   color: white;
 }
+
 
 .page-header h1 {
   font-size: 48px;
@@ -32,7 +33,7 @@ body {
 
 .benefit-section h2 {
   font-size: 32px;
-  color: #0f5f4d;
+  color: #1ea89d;
 }
 
 .benefit-section ul {
@@ -57,7 +58,7 @@ body {
 
 .card h3 {
   margin-top: 0;
-  color: #0f5f4d;
+  color: #1ea89d;
 }
 
 /* Tabelle */
@@ -88,5 +89,5 @@ table th {
 }
 
 .conclusion h2 {
-  color: #0f5f4d;
+  color:  #1ea89d;
 }

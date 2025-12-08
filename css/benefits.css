@@ -10,7 +10,7 @@ body {
 .page-header {
   text-align: center;
   padding: 60px 20px;
-  background-image: url("benemain.png");
+  background-image: url("../pic/benemain.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,65 +1,79 @@
-.top-nav {
-  display: flex;
-  justify-content: flex-end; /* <<< Hamburger rechts! */
-  padding: 20px;
-  background: #000;
+/* Entfernt alle weißen Ränder */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url('sprinkler.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+}
+
+/* Hero-Text */
+.hero-text {
+  position: absolute;
+  left: 5%;
+  bottom: 12%;
+  color: white;
+  font-size: 75px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Hamburger größer */
 .hamburger {
+  position: absolute;
+  top: 35px;
+  right: 35px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
   cursor: pointer;
 }
 
 .hamburger span {
-  width: 30px;
-  height: 3px;
-  background: #fff;
+  width: 42px;
+  height: 6px;
+  background: #ffffff;
 }
 
-/* Menü */
+/* Mobile Menu */
 .mobile-menu {
   display: none;
   position: absolute;
-  right: 20px;
-  top: 75px;
-  width: 220px;
-  background: #fff;
-  border: 2px solid #000;
+  right: 35px;
+  top: 100px;
+  width: 240px;
+  background: #ffffff;
+  border: 2px solid #000000;
   border-radius: 6px;
+  padding: 10px 0;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 14px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.mobile-menu a:hover {
+  background: #eeeeee;
 }
 
 .mobile-menu.open {
   display: block;
 }
-
-.hero-banner {
-  
-  width: 100%;
-  height: 450px; 
-  position: relative; 
-  overflow: hidden; 
-  
-  background-image: url('sprinkler.jpg'); 
-  background-size: cover;
-  background-position: center; 
-  
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); 
-}
-
-.hero-text {
-  position: absolute; 
-  
-  left: 5%; 
-  top: 50%;
-  transform: translateY(-50%); 
-  
-  color: white; 
-  font-family: Arial, sans-serif; 
-  font-size: 48px; 
-  line-height: 1.1; 
-  font-weight: bold;
-  margin: 0; 
-}
-

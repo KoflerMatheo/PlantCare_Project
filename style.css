@@ -37,3 +37,71 @@ body {
    right: 25px;
 }
 
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger span {
+  width: 32px;
+  height: 4px;
+  background: #fff;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: white;
+  width: 200px;
+  padding: 15px 0;
+  border-radius: 10px;
+  border: 2px solid #1e87c9;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.mobile-menu a:hover {
+  background: #e8f6ff;
+}
+
+/* Search Box */
+.search-box {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  background: rgba(255,255,255,0.3);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 30px;
+  backdrop-filter: blur(4px);
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  outline: none;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 3;
+}
+

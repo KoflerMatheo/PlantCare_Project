@@ -8,32 +8,59 @@
 </head>
 <body>
 
-<div class="hero-banner">
+  <div class="hero-banner">
 
-  <!-- Hamburger Button -->
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <!-- SUCHLEISTE -->
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Suchen">
+    </div>
+  
+    <div class="mobile-menu" id="menu">
+      <a href="index.html">Hauptseite</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="products.html">Products</a>
+      <a href="systems.html">Systems</a>
+    </div>
+  
+    <h1 class="hero-text">Entdecke mehr über<br>Bewässerungssysteme</h1>
+  
   </div>
-
-  <!-- Dropdown Menü -->
-  <div class="mobile-menu" id="menu">
-    <a href="index.html">Hauptseite</a>
-    <a href="benefits.html">Benefits</a>
-    <a href="products.html">Products</a>
-    <a href="systems.html">Systems</a>
-  </div>
-
-  <h1 class="hero-text">Entdecke mehr über Bewässerungssysteme</h1>
-
-</div>
+  
 
 <script>
 function toggleMenu() {
   document.getElementById("menu").classList.toggle("open");
 }
+  function highlightText() {
+    let searchValue = document.getElementById("searchInput").value.toLowerCase();
+
+    // Elemente, die durchsucht werden dürfen
+    let elements = document.querySelectorAll("h1, p, a, li, div, span");
+
+    elements.forEach(el => {
+
+      // ursprünglichen Text wiederherstellen
+      el.innerHTML = el.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, "$1");
+
+      if (searchValue.length > 0) {
+        let regex = new RegExp("(" + searchValue + ")", "gi");
+        el.innerHTML = el.innerHTML.replace(regex, "<span class='highlight'>$1</span>");
+      }
+
+    });
+  }
+
+  document.getElementById("searchInput").addEventListener("input", highlightText);
 </script>
 
+</script>
+  
 </body>
 </html>

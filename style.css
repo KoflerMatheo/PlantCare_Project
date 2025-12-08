@@ -77,3 +77,43 @@ body {
 .mobile-menu.open {
   display: block;
 }
+
+.search-box {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 12px 20px;
+  border-radius: 40px;
+  width: 300px;
+  backdrop-filter: blur(6px);
+}
+
+.search-icon {
+  font-size: 22px;
+  color: white;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.highlight {
+  background: yellow;
+  color: black;
+}
+

@@ -105,3 +105,34 @@ body {
   z-index: 3;
 }
 
+.hero-content h1 {
+  font-size: 54px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn,
+.btn-secondary {
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn {
+  background: #1ea89d;
+  color: white;
+}
+

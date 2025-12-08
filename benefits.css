@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7fbfc;
+  color: #103b40;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #4fc3f7, #81c784);
+  color: white;
+}
+
+.page-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 20px;
+}
+
+/* Sections */
+.benefit-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.benefit-section h2 {
+  font-size: 32px;
+  color: #0f5f4d;
+}
+
+.benefit-section ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #d7eae8;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0f5f4d;
+}
+
+/* Tabelle */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  border-bottom: 1px solid #cbe3df;
+}
+
+table th {
+  background: #e7f5f0;
+}
+
+/* Fazit */
+.conclusion {
+  background: #e8f8f6;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.conclusion h2 {
+  color: #0f5f4d;
+}

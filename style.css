@@ -42,7 +42,7 @@ body {
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 9999;
 }
 
 .hamburger span {
@@ -61,6 +61,7 @@ body {
   padding: 15px 0;
   border-radius: 10px;
   border: 2px solid #1e87c9;
+  z-index: 9999;
 }
 
 .mobile-menu a {

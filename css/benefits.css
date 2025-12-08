@@ -10,7 +10,10 @@ body {
 .page-header {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #74fbeb, #1ea89d);
+  background-image: url("header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
 }
 
@@ -81,13 +84,3 @@ table th {
   background: #e7f5f0;
 }
 
-/* Fazit */
-.conclusion {
-  background: #e8f8f6;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.conclusion h2 {
-  color:  #1ea89d;
-}

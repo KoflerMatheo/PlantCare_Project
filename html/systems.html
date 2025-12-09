@@ -1,64 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<title>Überschrift mit Hintergrundbild</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #eef6f0;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorteile von Bewässerungssystemen</title>
 
-  /* Hero-Container */
-  .hero {
-    position: relative;
-    height: 220px;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    border-radius: 16px;
-    overflow: hidden;
-    margin: 20px;
-    box-shadow: 0 6px 22px rgba(0,0,0,0.1);
-  }
-
-  /* Hintergrundbild */
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url('../pic/Bewässerungssysteme.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.55);
-    z-index: 0;
-  }
-
-  /* Overlay für bessere Lesbarkeit */
-  .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.25);
-    z-index: 1;
-  }
-
-  /* Inhalt / Überschrift */
-  .hero h1 {
-    position: relative;
-    z-index: 2;
-    color: white;
-    font-size: 36px;
-    margin: 0;
-  }
-</style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/systems.css">
+    <script defer src="../js/script.js"></script>
 </head>
 <body>
 
-<div class="hero">
-  <h1>Bewässerungssysteme</h1>
-</div>
+    <nav class="nav">
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Startseite</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="products.html">Produkte</a>
+            <a href="systems.html">Systeme</a>
+        </div>
+    </nav>
+
+    <!-- Deine Navigation / Suchleiste etc. kommt hier hin -->
+
+    <section class="page-header">
+        <h1>Bewässerungssysteme</h1>
+        <p>Warum automatische Bewässerung in Garten, Gewerbe und Landwirtschaft immer wichtiger wird.</p>
+    </section>
+
 
 </body>
 </html>

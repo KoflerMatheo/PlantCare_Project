@@ -1,0 +1,9 @@
+.page-header {
+  text-align: center;
+  padding: 60px 20px;
+  background-image: url("../pic/Bewässerungssysteme.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}

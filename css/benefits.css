@@ -102,12 +102,20 @@ body {
   padding: 20px;
   border: 1px solid #d7eae8;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease; /* Animation hinzufügen */
+}
+
+.card:hover {
+  transform: translateY(-6px); /* leicht schweben */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* stärkerer Schatten */
+  border-color: #1ea89d; /* zarter Farbakzent beim Hover */
 }
 
 .card h3 {
   margin-top: 0;
   color: #1ea89d;
 }
+
 
 /* Tabelle */
 .table-wrapper {

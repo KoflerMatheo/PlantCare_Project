@@ -33,3 +33,5 @@ function highlightText(element, search) {
         [...element.children].forEach(child => highlightText(child, search));
     }
 }
+
+

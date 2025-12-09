@@ -137,3 +137,36 @@ table th {
   background: #e7f5f0;
 }
 
+/* Hintergrund der ganzen Seite abdunkeln */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none; /* wird mit JS sichtbar */
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* das weiße Fenster */
+.modal-box {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* X-Button zum Schließen */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}

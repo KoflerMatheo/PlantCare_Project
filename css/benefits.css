@@ -36,7 +36,7 @@ body {
  width: 200px;
  padding: 15px 0;
  border-radius: 10px;
- border: 2px solid #1e87c9;
+ border: 2px solid #1ea89d;
  z-index: 9999;
 }
 
@@ -50,30 +50,6 @@ body {
 .mobile-menu a:hover {
  background: #e8f6ff;
 }
-
-/* Search Box */
-.search-box {
- position: absolute;
- top: 25px;
- left: 25px;
- display: flex;
- align-items: center;
- gap: 10px;
- padding: 8px 18px;
- background: rgba(255,255,255,0.3);
- border: 2px solid rgba(255,255,255,0.5);
- border-radius: 30px;
- backdrop-filter: blur(4px);
-}
-
-.search-box input {
- border: none;
- background: transparent;
- color: white;
- font-size: 18px;
- outline: none;
-}
-
 
 /* Header */
 .page-header {

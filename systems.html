@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tröpfchenbewässerung</title>
+  <style>
+    :root{
+      --bg:#f6f8fa;
+      --card:#ffffff;
+      --accent:#1f7a5c;
+      --muted:#55606a;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#04121a;
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#ffffff);
+      min-height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:36px 18px;
+    }
+    .wrap{
+      width:100%;
+      max-width:900px;
+      background:var(--card);
+      border-radius:12px;
+      box-shadow: 0 8px 30px rgba(6,22,34,0.06);
+      padding:28px;
+      border:1px solid rgba(4,18,26,0.04);
+    }
+    h1{ margin:0 0 8px 0; font-size:28px; color:var(--accent); }
+    h2{ margin:18px 0 8px 0; font-size:20px; color:#0b2b22; }
+    p{ margin:10px 0; line-height:1.6; font-size:16px; color:#072029; }
+    .meta{ color:var(--muted); font-size:14px; margin-bottom:12px; }
+    ul{ margin:8px 0 8px 20px; }
+    li{ margin:6px 0; line-height:1.5; }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:18px;
+    }
+    @media (max-width:720px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+    footer{ margin-top:18px; font-size:13px; color:var(--muted); text-align:right; }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="title">
+    <h1 id="title">Tröpfchenbewässerung</h1>
+    <p class="meta">Kurzinfo: gezielte, wassersparende Bewässerung über Tropfer/Emitter.</p>
+
+    <section>
+      <p><strong>Die Tröpfchenbewässerung</strong> ist ein Verfahren, bei dem Wasser über Schläuche mit kleinen Auslässen sehr sparsam und gezielt direkt an die Pflanzen abgegeben wird (2–4 l/h). Ursprünglich in trockenen Ländern entwickelt, wird sie heute weltweit im Gartenbau, Weinbau sowie in Hausgärten und Parkanlagen eingesetzt.</p>
+
+      <p>Moderne Systeme nutzen Emitter mit integriertem Labyrinth, die unabhängig vom Leitungsdruck konstante Wassermengen abgeben. Druckkompensierende Tropfer verhindern ungleichmäßige Bewässerung in Hanglagen. Die Anlagen können automatisiert über Sensoren und Steuergeräte betrieben werden und eignen sich auch für Defizitbewässerung.</p>
+
+      <p>Man unterscheidet <strong>oberirdische</strong> (Schläuche auf dem Boden) und <strong>unterirdische</strong> Systeme (Schläuche im Boden). Unterirdische Varianten sind aufwendiger zu installieren, dafür unauffällig.</p>
+    </section>
+
+    <section class="grid" aria-label="Vor- und Nachteile">
+      <div>
+        <h2>Vorteile</h2>
+        <ul>
+          <li>Hohe Wassereffizienz und geringere Kosten durch reduzierte Verdunstung.</li>
+          <li>Nährstoffe können direkt über das Wasser verabreicht werden.</li>
+          <li>Weniger Krankheiten, da Blätter trocken bleiben.</li>
+          <li>Praktisch bei Böden mit geringer Wasserspeicherung.</li>
+          <li>Weniger Unkraut, da nur Kulturpflanzen bewässert werden.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Nachteile</h2>
+        <ul>
+          <li>Verstopfung von Tropfern, besonders bei Düngereinsatz.</li>
+          <li>Gefahr von Bodenversalzung in ariden Gebieten.</li>
+          <li>Hoher Installationsaufwand, besonders bei Einzelpflanzen und Dauerkulturen.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Geschichte</h2>
+      <p>Das Prinzip existiert seit der Antike (Tontöpfe im Boden). Der moderne Ansatz wurde in den 1930er Jahren vom israelischen Ingenieur <strong>Simcha Blass</strong> entwickelt. Seine Firma Netafim wurde weltweit führend. Trotzdem nutzen weltweit erst ca. 5 % der Bauern Tröpfchenbewässerung; viele setzen weiterhin auf traditionelle Flutbewässerung.</p>
+    </section>
+
+    <footer>Quelle: Textbasis vom Benutzer</footer>
+  </main>
+</body>
+</html>

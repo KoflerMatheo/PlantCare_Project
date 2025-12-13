@@ -38,10 +38,11 @@
   z-index: 9999;
 }
 
-.hamburger span {
-  width: 32px;
-  height: 4px;
-  background: #fff;
+.hero::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.45);
 }
 
 .mobile-menu {

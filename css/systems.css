@@ -43,6 +43,11 @@ body {
   color: #000000;
 }
 
+h2 {
+  margin-top: 0;
+  color: #1ea89d;
+}
+
 /* NAVIGATION */
 .nav {
   position: fixed;

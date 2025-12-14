@@ -186,3 +186,17 @@ table th {
   margin-bottom: 10px;
   line-height: 1.4;
 }
+
+/* Nachteile-Box */
+.cons-box {
+  width: 45%;
+  background-color: #f6ecec;
+  border: 2px solid #e53935;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cons-box h3 {
+  margin-top: 0;
+  color: #cb2a2a;
+}

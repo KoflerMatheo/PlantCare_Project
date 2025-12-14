@@ -200,3 +200,7 @@ table th {
   margin-top: 0;
   color: #cb2a2a;
 }
+
+.cons-box ul {
+  padding-left: 20px;
+}

@@ -1,3 +1,4 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER MIT ABDUNKLUNG NUR DES BILDES */
 .page-header {
+  position: relative;
   text-align: center;
   padding: 60px 20px;
   background-image: url("../pic/Bewässerungssysteme.jpg");
@@ -20,51 +23,88 @@
   margin-bottom: 10px;
 }
 
-.page-header p {
-  font-size: 20px;
+/* dunkles Overlay NUR fürs Bild */
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
 }
 
+/* Text über das Overlay holen */
+.page-header > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* NAVIGATION */
 .nav {
-   position: absolute;
-   top: 25px;
-   right: 25px;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 10001;
 }
 
+/* HAMBURGER */
 .hamburger {
   display: flex;
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
-  z-index: 9999;
 }
 
-.hero::before {
-   content: "";
-   position: absolute;
-   inset: 0;
-   background: rgba(0, 0, 0, 0.45);
+.hamburger span {
+  width: 32px;
+  height: 4px;
+  background: white;
+  border-radius: 2px;
 }
 
+/* MODAL OVERLAY (dunkler Hintergrund) */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+/* MODAL BOX */
+.modal-box {
+  background: white;
+  width: 90%;
+  max-width: 300px;
+  padding: 20px 0;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
 .mobile-menu {
- display: none;
- position: absolute;
- top: 60px;
- right: 0;
- background: white;
- width: 200px;
- padding: 15px 0;
- border-radius: 10px;
- border: 2px solid #1ea89d;
- z-index: 9999;
+  display: block;
 }
 
 .mobile-menu a {
- display: block;
- padding: 12px 20px;
- text-decoration: none;
- color: #333;
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
 }
 
 .mobile-menu a:hover {
- background: #e8f6ff;
+  background: #e8f6ff;
 }

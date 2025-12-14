@@ -48,6 +48,43 @@ h2 {
   color: #1ea89d;
 }
 
+.system-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.system-section h2 {
+  font-size: 32px;
+  color: #1ea89d;
+}
+
+.system-section ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* Tabelle */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  border-bottom: 1px solid #cbe3df;
+}
+
+table th {
+  background: #e7f5f0;
+}
+
+
 /* NAVIGATION */
 .nav {
   position: fixed;

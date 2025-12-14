@@ -204,3 +204,8 @@ table th {
 .cons-box ul {
   padding-left: 20px;
 }
+
+.cons-box li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}

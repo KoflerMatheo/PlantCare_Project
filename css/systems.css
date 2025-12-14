@@ -177,3 +177,7 @@ table th {
   margin-top: 0;
   color: #0ea4ac;
 }
+
+.pros-box ul {
+  padding-left: 20px;
+}

@@ -38,6 +38,11 @@
   z-index: 1;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
 /* NAVIGATION */
 .nav {
   position: fixed;

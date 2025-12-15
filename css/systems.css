@@ -172,6 +172,7 @@ table th {
 
 /* Vorteile-Box */
 .pros-box {
+  margin: auto;
   width: 45%;
   background-color: #f1f8f8;
   border: 2px solid #2fc6ce;
@@ -199,6 +200,7 @@ table th {
   background-color: #f6ecec;
   border: 2px solid #e53935;
   border-radius: 10px;
+  margin: auto;
   padding: 20px;
 }
 

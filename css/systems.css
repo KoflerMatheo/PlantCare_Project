@@ -84,28 +84,50 @@ table th {
   background: #e7f5f0;
 }
 
-
-/* NAVIGATION */
+/* Navigation */
 .nav {
-  position: fixed;
+  position: absolute;
   top: 25px;
   right: 25px;
-  z-index: 10001;
 }
 
-/* HAMBURGER */
 .hamburger {
   display: flex;
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 
 .hamburger span {
-  width: 32px;
-  height: 4px;
-  background: white;
-  border-radius: 2px;
+ width: 32px;
+ height: 4px;
+ background: #fff;
+}
+
+.mobile-menu {
+ display: none;
+ position: absolute;
+ top: 60px;
+ right: 0;
+ background: white;
+ width: 200px;
+ padding: 15px 0;
+ border-radius: 10px;
+ border: 2px solid #1ea89d;
+ z-index: 9999;
+}
+
+.mobile-menu a {
+ display: block;
+ padding: 12px 20px;
+ text-decoration: none;
+ color: #333;
+}
+
+.mobile-menu a:hover {
+ background: #e8f6ff;
 }
 
 /* MODAL OVERLAY (dunkler Hintergrund) */
@@ -139,22 +161,6 @@ table th {
   cursor: pointer;
 }
 
-/* MOBILE MENU */
-.mobile-menu {
-  display: block;
-}
-
-.mobile-menu a {
-  display: block;
-  padding: 14px 20px;
-  text-decoration: none;
-  color: #333;
-  text-align: center;
-}
-
-.mobile-menu a:hover {
-  background: #e8f6ff;
-}
 
 /* Container für Vorteile & Nachteile */
 .pro-con-container {

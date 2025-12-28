@@ -237,3 +237,14 @@ table th {
 .toggle-btn:hover {
   background: #168f86;
 }
+
+/* Bild unter der Überschrift */
+.system-image {
+  width: 100%;         /* passt sich der Containerbreite an */
+  max-width: 700px;    /* maximal nicht zu groß */
+  height: auto;        /* korrektes Seitenverhältnis */
+  display: block;
+  margin: 20px auto;   /* zentriert unter der Überschrift */
+  border-radius: 10px; /* optional: abgerundete Ecken */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* optional: leichter Schatten */
+}

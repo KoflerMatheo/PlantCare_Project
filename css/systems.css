@@ -248,3 +248,36 @@ table th {
   border-radius: 10px; /* optional: abgerundete Ecken */
   box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* optional: leichter Schatten */
 }
+
+.pro-con-table {
+  margin: 3rem auto;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.pro-con-table h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pro-con-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pro-con-table th {
+  background-color: #29bab3;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.pro-con-table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}

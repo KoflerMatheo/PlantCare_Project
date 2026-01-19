@@ -41,6 +41,18 @@ body {
   z-index: 1100; /* garantiert klickbar */
 }
 
+/* Navbar layout: make container flex so search can align right */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .sidebar-search {
+  margin-left: auto;
+  width: 220px;
+}
+
 /* Responsive positioning for shared sidebar (desktop fixed, mobile off-canvas) */
 @media (min-width: 769px) {
   #sidebar-wrapper {
@@ -94,12 +106,33 @@ body {
   font-weight: 700;
 }
 
+/* Sidebar heading inner layout: brand left, search right */
+.sidebar-head-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.sidebar-search {
+  width: 140px;
+  padding: 6px 8px;
+  border: 1px solid #e6e9ee;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .sidebar-search { width: 100px; }
+}
+
 /* ================= HERO ================= */
 .hero {
   position: relative;
   min-height: 100vh;
   /* try sprinkler.jpg first, fall back to sp.jpg if missing */
-  background-image: url('../pic/benemain.png');
+  background-image: url('../pic/benemain.png'), url('../pic/sp.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

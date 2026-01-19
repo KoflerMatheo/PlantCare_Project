@@ -91,6 +91,26 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Perform a site-wide search by fetching known pages and redirecting to the first match
 async function performSiteSearch(term) {
+    // keyword -> preferred page mapping (checks first for fast routing)
+    const map = {
+        'systems.html': ['system', 'tröpf', 'tröpfchen', 'sprinkl', 'sprinkler', 'subsurface', 'oberflächen', 'unterflur'],
+        'benefits.html': ['vorteil', 'vorteile', 'benefit', 'wasser', 'effizienz', 'erspar', 'gesund', 'kosten', 'komfort'],
+        'products.html': ['produkt', 'produkte', 'shop', 'gerät', 'steuergerät', 'ventil', 'pumpe']
+    };
+
+    const lower = term.toLowerCase();
+
+    // direct keyword mapping
+    for (const [page, keywords] of Object.entries(map)) {
+        for (const k of keywords) {
+            if (lower.includes(k)) {
+                window.location.href = page + '?q=' + encodeURIComponent(term);
+                return;
+            }
+        }
+    }
+
+    // fallback: scan known pages for the term and redirect to first match
     const pages = [
         'index.html',
         'benefits.html',
@@ -98,14 +118,12 @@ async function performSiteSearch(term) {
         'products.html'
     ];
 
-    const lower = term.toLowerCase();
     for (const p of pages) {
         try {
             const resp = await fetch(p, {cache: 'no-store'});
             if (!resp.ok) continue;
             const txt = await resp.text();
             if (txt.toLowerCase().includes(lower)) {
-                // Redirect to the page and pass query param for highlighting
                 const url = p + '?q=' + encodeURIComponent(term);
                 window.location.href = url;
                 return;
@@ -115,7 +133,6 @@ async function performSiteSearch(term) {
         }
     }
 
-    // Keine Treffer
     alert('Kein Treffer auf den Seiten gefunden.');
 }
 

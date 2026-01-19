@@ -1,0 +1,78 @@
+
+    body {
+          font-family: Arial, sans-serif;
+          background: #f7fbfc;
+          margin: 0;
+          padding: 0;
+          color: #333;
+        }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      color: #1ea89d;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    th, td {
+      border: 1px solid #d7eae8;
+      padding: 12px;
+      vertical-align: top;
+    }
+
+    th {
+      background: #e7f5f0;
+      width: 25%;
+      text-align: left;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+/* Navbar layout: align search to the right like on other pages */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .sidebar-search {
+  margin-left: auto;
+  width: 220px;
+}
+
+@media (max-width: 900px) {
+  .navbar .sidebar-search { width: 140px; }
+}
+
+/* Page content spacing consistent with other pages */
+#page-content-wrapper {
+  padding: 1.5rem 2rem;
+}
+
+/* center content area and limit width for readability */
+#page-content-wrapper > main { max-width: 1100px; margin: 0 auto; }
+  

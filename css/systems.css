@@ -84,10 +84,9 @@ table th {
   background: #e7f5f0;
 }
 
-/* Layout tweaks for sidebar integration */
+/* Page content spacing (do not include sidebar positioning here — use shared style.css) */
 #page-content-wrapper {
   padding: 1.5rem 2rem;
-  transition: margin-left 0.3s ease;
 }
 
 /* Ensure the header has breathing room below the top navbar */
@@ -97,12 +96,6 @@ table th {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-/* Container inside header should sit above overlay */
-.page-header > * {
-  position: relative;
-  z-index: 1;
 }
 
 /* Small screens: tighten paddings */
@@ -124,7 +117,7 @@ table th {
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  z-index: 11000;
 }
 
 /* MODAL BOX */
@@ -223,6 +216,28 @@ table th {
 .toggle-btn:hover {
   background: #168f86;
 }
+
+/* Visual enhancements similar to benefits page */
+.info-grid { gap: 24px; }
+.card { transition: transform .18s ease, box-shadow .18s ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(16,24,40,0.12); }
+
+/* center content area and limit width for readability */
+#page-content-wrapper > .container { max-width: 1100px; margin: 0 auto; }
+
+/* Pro/Con responsive layout */
+.pro-con-container { display: flex; gap: 32px; align-items: flex-start; justify-content: space-between; }
+.pros-box, .cons-box { width: 48%; }
+@media (max-width: 900px) {
+  .pro-con-container { flex-direction: column; gap: 16px; }
+  .pros-box, .cons-box { width: 100%; }
+}
+
+/* Table readability */
+.table-wrapper table th, .table-wrapper table td { text-align: left; }
+
+/* Top navbar subtle style */
+.navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
 
 /* Bild unter der Überschrift */
 .system-image {

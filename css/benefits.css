@@ -6,49 +6,23 @@ body {
   color: #000000;
 }
 
-/* Navigation */
-.nav {
-  position: absolute;
-  top: 25px;
-  right: 25px;
+/* Page content spacing (use shared sidebar rules from style.css) */
+#page-content-wrapper {
+  padding: 1.5rem 2rem;
 }
 
-.hamburger {
- display: flex;
- flex-direction: column;
- gap: 6px;
- cursor: pointer;
- z-index: 9999;
+/* Header spacing */
+.page-header {
+  padding: 4rem 1.5rem;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hamburger span {
- width: 32px;
- height: 4px;
- background: #fff;
-}
-
-.mobile-menu {
- display: none;
- position: absolute;
- top: 60px;
- right: 0;
- background: white;
- width: 200px;
- padding: 15px 0;
- border-radius: 10px;
- border: 2px solid #1ea89d;
- z-index: 9999;
-}
-
-.mobile-menu a {
- display: block;
- padding: 12px 20px;
- text-decoration: none;
- color: #333;
-}
-
-.mobile-menu a:hover {
- background: #e8f6ff;
+@media (max-width: 768px) {
+  #page-content-wrapper { padding: 1rem; }
+  .page-header { padding: 3rem 1rem; }
 }
 
 /* Header */
@@ -150,8 +124,30 @@ table th {
   display: none; /* wird mit JS sichtbar */
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 11000;
 }
+
+/* Visual enhancements */
+.info-grid { gap: 24px; }
+.card { transition: transform .18s ease, box-shadow .18s ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(16,24,40,0.12); }
+
+/* center content area and limit width for readability */
+#page-content-wrapper > .container { max-width: 1100px; margin: 0 auto; }
+
+/* Pro/Con responsive layout */
+.pro-con-container { display: flex; gap: 32px; align-items: flex-start; justify-content: space-between; }
+.pros-box, .cons-box { width: 48%; }
+@media (max-width: 900px) {
+  .pro-con-container { flex-direction: column; gap: 16px; }
+  .pros-box, .cons-box { width: 100%; }
+}
+
+/* Table readability */
+.table-wrapper table th, .table-wrapper table td { text-align: left; }
+
+/* Top navbar subtle style */
+.navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
 
 /* das weiße Fenster */
 .modal-box {

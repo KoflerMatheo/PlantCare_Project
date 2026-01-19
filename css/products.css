@@ -3,8 +3,9 @@
           font-family: Arial, sans-serif;
           background: #f7fbfc;
           margin: 0;
-          padding: 0;
+              padding: 0;
           color: #333;
+              line-height: 1.6;
         }
 
     h1 {
@@ -52,6 +53,18 @@
       text-decoration: underline;
     }
 
+/* Match index page spacing: paragraphs and list items readable */
+#page-content-wrapper p,
+#page-content-wrapper li {
+  line-height: 1.6;
+}
+
+/* Slightly increase table cell line-height for readability */
+#page-content-wrapper th,
+#page-content-wrapper td {
+  line-height: 1.4;
+}
+
 /* Navbar layout: align search to the right like on other pages */
 .navbar .container-fluid {
   display: flex;
@@ -71,6 +84,11 @@
 /* Page content spacing consistent with other pages */
 #page-content-wrapper {
   padding: 1.5rem 2rem;
+}
+
+/* Sidebar: make list items normal weight on products page */
+#sidebar-wrapper .list-group-item {
+  font-weight: 400;
 }
 
 /* center content area and limit width for readability */

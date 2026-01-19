@@ -2,25 +2,30 @@
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 
-hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("open");
-    mobileMenu.style.display = mobileMenu.classList.contains("open") ? "block" : "none";
-});
+if (hamburger && mobileMenu) {
+    hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+        mobileMenu.style.display = mobileMenu.classList.contains("open") ? "block" : "none";
+    });
+}
 
 // Search highlight
-document.getElementById("searchInput").addEventListener("input", function() {
-    const searchValue = this.value.toLowerCase();
-    const body = document.body;
+const searchInput = document.getElementById("searchInput");
+if (searchInput) {
+    searchInput.addEventListener("input", function() {
+        const searchValue = this.value.toLowerCase();
+        const body = document.body;
 
-    // Remove previous highlights
-    document.querySelectorAll("span.highlight").forEach(el => {
-        el.outerHTML = el.innerText;
+        // Remove previous highlights
+        document.querySelectorAll("span.highlight").forEach(el => {
+            el.outerHTML = el.innerText;
+        });
+
+        if (searchValue.length > 0) {
+            highlightText(body, searchValue);
+        }
     });
-
-    if (searchValue.length > 0) {
-        highlightText(body, searchValue);
-    }
-});
+}
 
 function highlightText(element, search) {
     if (element.children.length === 0 && element.innerText.toLowerCase().includes(search)) {

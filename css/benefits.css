@@ -149,6 +149,22 @@ table th {
 /* Top navbar subtle style */
 .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
 
+/* Navbar layout: align search to the right like on index/systems */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .sidebar-search {
+  margin-left: auto;
+  width: 220px;
+}
+
+@media (max-width: 900px) {
+  .navbar .sidebar-search { width: 140px; }
+}
+
 /* das weiße Fenster */
 .modal-box {
   background: white;

@@ -35,3 +35,20 @@ if (modal && titleEl && textEl && imgEl) {
   });
 }
 
+// Ensure Enter in the page search delegates to the global search handler
+const searchInputB = document.getElementById('searchInput');
+if (searchInputB) {
+  searchInputB.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      const term = this.value.trim();
+      if (!term) return;
+      if (typeof performSiteSearch === 'function') {
+        performSiteSearch(term);
+      } else {
+        // fallback: navigate to benefits page with query param
+        window.location.href = 'benefits.html?q=' + encodeURIComponent(term);
+      }
+    }
+  });
+}
+

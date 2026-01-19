@@ -98,7 +98,11 @@ body {
 .hero {
   position: relative;
   min-height: 100vh;
-  background: url('../pic/sprinkler.jpg') center / cover no-repeat;
+  /* try sprinkler.jpg first, fall back to sp.jpg if missing */
+  background-image: url('../pic/sprinkler.jpg'), url('../pic/sp.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
@@ -106,8 +110,8 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  pointer-events: none; /* 🔥 FINAL FIX */
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
 }
 
 .hero-content {

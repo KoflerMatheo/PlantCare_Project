@@ -34,4 +34,29 @@ function highlightText(element, search) {
     }
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+
+    const sidebarToggle = document.getElementById("sidebarToggle");
+    const wrapper = document.getElementById("wrapper");
+
+    if (!sidebarToggle || !wrapper) return;
+
+    // Zustand beim Laden wiederherstellen
+    if (localStorage.getItem("sidebar-toggled") === "true") {
+        wrapper.classList.add("toggled");
+    }
+
+    sidebarToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        wrapper.classList.toggle("toggled");
+
+        // Zustand speichern
+        localStorage.setItem(
+            "sidebar-toggled",
+            wrapper.classList.contains("toggled")
+        );
+    });
+});
+
 

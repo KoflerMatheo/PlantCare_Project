@@ -53,6 +53,31 @@ body {
   width: 220px;
 }
 
+/* Brand + logo on the right */
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-text {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.brand-logo {
+  height: 28px;
+  width: auto;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .brand-text { display: none; }
+  .brand-logo { height: 22px; }
+  .navbar .sidebar-search { width: 120px; }
+}
+
 /* Responsive positioning for shared sidebar (desktop fixed, mobile off-canvas) */
 @media (min-width: 769px) {
   #sidebar-wrapper {
@@ -113,6 +138,32 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+}
+
+/* Brand in sidebar (left, next to title) */
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-logo-sidebar {
+  height: 44px;
+  width: auto;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .brand-logo-sidebar { height: 36px; }
+}
+
+/* Adjust sidebar background tone to better match the logo */
+#sidebar-wrapper {
+  background-color: #fbfcfd; /* very light cool white */
+}
+
+.sidebar-heading {
+  background-color: #f7fbfc; /* slightly warmer than wrapper to create subtle contrast */
 }
 
 .sidebar-search {

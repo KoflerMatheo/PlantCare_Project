@@ -1,16 +1,10 @@
 .hero {
   position: relative;
   min-height: 70vh;
-  background: url("../pic/hero.jpg") center/cover no-repeat;
+  background-image: url('../pic/sprinkler.jpg');
   color: white;
   display: flex;
   align-items: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
 }
 
 .hero-content {

@@ -99,7 +99,7 @@ body {
   position: relative;
   min-height: 100vh;
   /* try sprinkler.jpg first, fall back to sp.jpg if missing */
-  background-image: url('../pic/sprinkler.jpg'), url('../pic/sp.jpg');
+  background-image: url('../pic/benemain.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,12 +107,6 @@ body {
   align-items: center;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  pointer-events: none;
-}
 
 .hero-content {
   position: relative;

@@ -7,23 +7,34 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/systems.css">
+    <link rel="stylesheet" href="../sidebar/css/styles.css">
     <script defer src="../js/systems.js"></script>
     <script defer src="../js/script.js"></script>
 </head>
 <body>
+<div class="d-flex" id="wrapper">
 
-  <nav class="nav">
-      <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
-      </div>
+  <!-- Sidebar -->
+  <div class="border-end bg-white" id="sidebar-wrapper">
+    <div class="sidebar-heading border-bottom bg-light">PlantCare</div>
 
-      <div class="mobile-menu" id="mobileMenu">
-          <a href="index.html">Startseite</a>
-          <a href="benefits.html">Benefits</a>
-          <a href="products.html">Produkte</a>
-          <a href="systems.html">Systeme</a>
+    <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action p-3" href="index.html">Hauptseite</a>
+        <a class="list-group-item list-group-item-action p-3" href="systems.html">Systems</a>
+        <a class="list-group-item list-group-item-action p-3" href="benefits.html">Benefits</a>
+        <a class="list-group-item list-group-item-action p-3" href="products.html">Products</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+        <button class="btn btn-primary" id="sidebarToggle">☰ Menü</button>
       </div>
-  </nav>
+    </nav>
 
 <section class="page-header">
   <h1>Bewässerungssysteme</h1>
@@ -276,7 +287,10 @@
     </tbody>
   </table>
 </section>
-</section>
+    </section>
+
+  </div> <!-- /#page-content-wrapper -->
+</div> <!-- /#wrapper -->
 
 </body>
 </html>

@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vorteile von Bewässerungssystemen</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="../css/benefits.css">
-    <script defer src="../js/script.js"></script>
-    <script defer src="../js/benefits.js"></script>
+        <!-- Styles -->
+        <link rel="stylesheet" href="../css/benefits.css">
+        <link rel="stylesheet" href="../sidebar/css/styles.css">
+        <script defer src="../js/script.js"></script>
+        <script defer src="../js/benefits.js"></script>
 </head>
 <body>
+<div class="d-flex" id="wrapper">
 
-    <nav class="nav">
-        <div class="hamburger" id="hamburger">
-            <span></span><span></span><span></span>
+    <!-- Sidebar -->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">PlantCare</div>
+
+        <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action p-3" href="index.html">Hauptseite</a>
+                <a class="list-group-item list-group-item-action p-3" href="systems.html">Systems</a>
+                <a class="list-group-item list-group-item-action p-3" href="benefits.html">Benefits</a>
+                <a class="list-group-item list-group-item-action p-3" href="products.html">Products</a>
         </div>
+    </div>
 
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html">Startseite</a>
-            <a href="benefits.html">Benefits</a>
-            <a href="products.html">Produkte</a>
-            <a href="systems.html">Systeme</a>
-        </div>
-    </nav>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
 
-    <!-- Deine Navigation / Suchleiste etc. kommt hier hin -->
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="sidebarToggle">☰ Menü</button>
+            </div>
+        </nav>
 
-    <section class="page-header">
+        <section class="page-header">
         <h1>Vorteile moderner Bewässerungssysteme</h1>
         <p>Warum automatische Bewässerung in Garten, Gewerbe und Landwirtschaft immer wichtiger wird.</p>
     </section>
@@ -150,8 +159,18 @@
         <p id="modal-text">Hier kommen die Zusatzinfos rein.</p>
         <img id="modal-image" src="" alt="" style="max-width:100%; border-radius:10px;">
     </div>
-</div>
+    <!-- über der ganzen Seite -->
+  <div id="modal-overlay" class="modal-overlay">
+      <div class="modal-box">
+          <span class="close-btn">&times;</span>
+          <h2 id="modal-title">Titel</h2>
+          <p id="modal-text">Hier kommen die Zusatzinfos rein.</p>
+          <img id="modal-image" src="" alt="" style="max-width:100%; border-radius:10px;">
+      </div>
+  </div>
 
+  </div> <!-- /#page-content-wrapper -->
+</div> <!-- /#wrapper -->
 
 </body>
 </html>

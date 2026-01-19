@@ -4,77 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bewässerungssysteme – Startseite</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../sidebar/css/styles.css">
+    <link rel="stylesheet" href="../css/minilayoutindex.css">
+
+
+    <!-- JS -->
     <script defer src="../sidebar/js/script.js"></script>
-    <link rel="icon" type="image/x-icon" href="../sidebar/assets/favicon.ico" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../sidebar/css/styles.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../sidebar/assets/favicon.ico">
 </head>
+
 <body>
 
-<header class="hero">
-    
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Suchen ...">
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <aside id="sidebar-wrapper" class="border-end bg-white">
+        <div class="sidebar-heading border-bottom bg-light">PlantCare</div>
+        <nav class="list-group list-group-flush">
+            <a class="list-group-item p-3" href="#">Hauptseite</a>
+            <a class="list-group-item p-3" href="#">Systems</a>
+            <a class="list-group-item p-3" href="#">Benefits</a>
+            <a class="list-group-item p-3" href="#">Products</a>
+        </nav>
+    </aside>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="sidebarToggle">☰ Menü</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>
+                    Moderne Bewässerungssysteme<br>
+                    für Garten, Gewerbe & Landwirtschaft
+                </h1>
+                <p>Effizient. Automatisch. Nachhaltig.</p>
+
+                <div class="hero-buttons">
+                    <a href="benefits.html" class="btn btn-primary">Vorteile entdecken</a>
+                    <a href="products.html" class="btn btn-outline-light">Produkte ansehen</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Info Section -->
+        <main>
+            <section class="info-section">
+                <h2>Warum moderne Bewässerung?</h2>
+                <p>
+                    Moderne Bewässerungssysteme sparen Wasser, Zeit und Arbeit – 
+                    und sorgen für gesunde Pflanzen.
+                </p>
+
+                <div class="info-grid">
+                    <article class="info-card">
+                        <img src="../pic/trö.jpg" alt="Tropfbewässerung">
+                        <h3>Tröpfchenbewässerung</h3>
+                        <p>Maximale Wassereffizienz für Beete und Landwirtschaft.</p>
+                        <a href="systems.html" class="card-btn">Mehr erfahren</a>
+                    </article>
+
+                    <article class="info-card">
+                        <img src="../pic/sp.jpg" alt="Sprinkleranlagen">
+                        <h3>Sprinkleranlagen</h3>
+                        <p>Ideal für Rasenflächen und große Areale.</p>
+                        <a href="systems.html" class="card-btn">Mehr erfahren</a>
+                    </article>
+
+                    <article class="info-card">
+                        <img src="../pic/smart.jpg" alt="Smart Bewässerung">
+                        <h3>Smart Bewässerung</h3>
+                        <p>Sensoren & Automatisierung für maximale Kontrolle.</p>
+                        <a href="systems.html" class="card-btn">Mehr erfahren</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 PlantCare – Bewässerungssysteme</p>
+        </footer>
+
     </div>
-
-    <nav class="nav">
-        <div class="hamburger" id="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html">Startseite</a>
-            <a href="benefits.html">Benefits</a>
-            <a href="products.html">Produkte</a>
-            <a href="systems.html">Systeme</a>
-        </div>
-    </nav>
-
-    <div class="hero-content">
-        <h1>Moderne Bewässerungssysteme<br>für Garten, Gewerbe & Landwirtschaft</h1>
-        <p>Effizient. Automatisch. Nachhaltig.</p>
-
-        <div class="hero-buttons">
-            <a href="benefits.html" class="btn">Vorteile entdecken</a>
-            <a href="products.html" class="btn-secondary">Produkte ansehen</a>
-        </div>
-    </div>
-</header>
-
-
-<section class="info-section">
-    <h2>Warum moderne Bewässerung?</h2>
-    <p>Moderne Bewässerungssysteme sorgen für geringeren Wasserverbrauch, gesunde Pflanzen und weniger Arbeitsaufwand. Entdecke verschiedene Technologien und wie sie eingesetzt werden.</p>
-
-    <div class="info-grid">
-        <div class="info-card">
-            <img src="../pic/trö.jpg" alt="Tropfbewässerung">
-            <h3>Tröpfchenbewässerung</h3>
-            <p>Extrem wassereffizient. Ideal für Beete, Landwirtschaft und Gewächshäuser.</p>
-            <a href="systems.html" class="card-btn">Mehr erfahren</a>
-        </div>
-
-        <div class="info-card">
-            <img src="../pic/sp.jpg" alt="Sprinkler">
-            <h3>Sprinkleranlagen</h3>
-            <p>Perfekt für Rasenflächen, Parks und landwirtschaftliche Großflächen.</p>
-            <a href="systems.html" class="card-btn">Mehr erfahren</a>
-        </div>
-
-        <div class="info-card">
-            <img src="../pic/smart.jpg" alt="Smart Bewässerung">
-            <h3>Smart Bewässerung</h3>
-            <p>Intelligente Steuerung, Sensorik und Automatisierung für höchste Effizienz.</p>
-            <a href="systems.html" class="card-btn">Mehr erfahren</a>
-        </div>
-    </div>
-</section>
-
-
-<footer class="footer">
-    <p>© 2025 Bewässerungssysteme</p>
-</footer>
+</div>
 
 </body>
 </html>

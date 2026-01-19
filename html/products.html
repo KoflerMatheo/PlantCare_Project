@@ -5,320 +5,289 @@
   <title>Bewässerungssysteme – Übersicht & Produkte</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7fbfc;
-      margin: 0;
-      padding: 20px;
-      color: #333;
-    }
+  <!-- CSS (match index.html includes + product-specific CSS) -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../sidebar/css/styles.css">
+  <link rel="stylesheet" href="../css/minilayoutindex.css">
+  <link rel="stylesheet" href="../css/products.css">
 
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
+  <!-- JS -->
+  <script defer src="../js/script.js"></script>
 
-    h2 {
-      margin-top: 50px;
-      color: #1ea89d;
-    }
-
-    h3 {
-      margin-top: 30px;
-      color: #0d6efd;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      background: #fff;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    th, td {
-      border: 1px solid #d7eae8;
-      padding: 12px;
-      vertical-align: top;
-    }
-
-    th {
-      background: #e7f5f0;
-      width: 30%;
-      text-align: left;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 18px;
-    }
-
-    a {
-      color: #0d6efd;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .product-box {
-      background: #ffffff;
-      border-left: 5px solid #1ea89d;
-      padding: 15px;
-      margin: 15px 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    }
-  </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../sidebar/assets/favicon.ico">
 </head>
-
 <body>
 
-<h1>Bewässerungssysteme</h1>
-<p style="text-align:center;">
-  Es gibt die verschiedensten Systeme zur Bewässerung.  
-  Im Folgenden werden die wichtigsten Systeme erklärt – inklusive empfohlener Produkte.
-</p>
+<div class="d-flex" id="wrapper">
 
-<!-- ================================================= -->
-<!-- TRÖPFCHENBEWÄSSERUNG -->
-<!-- ================================================= -->
-<h2>Tröpfchenbewässerung</h2>
+  <!-- Sidebar -->
+  <div class="border-end bg-white" id="sidebar-wrapper">
+    <div class="sidebar-heading border-bottom bg-light">
+      <div class="sidebar-head-inner">
+        <div class="brand-wrap">
+          <span class="brand">PlantCare</span>
+          <img src="../pic/hand_plant.png" alt="PlantCare Logo" class="brand-logo-sidebar">
+        </div>
+      </div>
+    </div>
 
-<p>
-Die Tröpfchenbewässerung gibt Wasser sehr sparsam (ca. 2–4 l/h) direkt an die Wurzeln ab.
-Sie wird weltweit im Gartenbau, Weinbau sowie in Hausgärten eingesetzt.
-Moderne Systeme arbeiten druckkompensiert und lassen sich automatisieren.
-</p>
+    <div class="list-group list-group-flush">
+      <a class="list-group-item list-group-item-action p-3" href="index.html">Hauptseite</a>
+      <a class="list-group-item list-group-item-action p-3" href="systems.html">Systems</a>
+      <a class="list-group-item list-group-item-action p-3" href="benefits.html">Benefits</a>
+      <a class="list-group-item list-group-item-action p-3" href="products.html">Products</a>
+    </div>
+  </div>
 
-<table>
-  <tr>
-    <th>Vorteile</th>
-    <th>Nachteile</th>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Sehr hohe Wassereffizienz</li>
-        <li>Geringe Verdunstung</li>
-        <li>Blätter bleiben trocken</li>
-        <li>Ideal für Beete & Reihen</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Tropfer können verstopfen</li>
-        <li>Regelmäßige Wartung nötig</li>
-        <li>Aufwendiger bei großen Flächen</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
 
-<h3>Empfohlene Produkte</h3>
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+        <button class="btn btn-primary" id="sidebarToggle">☰ Menü</button>
+        <input id="searchInput" class="sidebar-search" type="search" placeholder="Suchen...">
+      </div>
+    </nav>
 
-<div class="product-box">
-<b>Bestes Gesamtprodukt (Privatgarten)</b><br>
-Gardena Micro-Drip-System Starter Set<br>
-<a href="https://www.gardena.com/de/produkte/bewaesserung/micro-drip/" target="_blank">Zum Produkt</a>
-</div>
+    <main>
+      <h1>Bewässerungssysteme</h1>
+      <p style="text-align:center;">
+        Es gibt die verschiedensten Systeme zur Bewässerung.
+        Im Folgenden werden die wichtigsten Systeme erklärt – inklusive empfohlener Produkte.
+      </p>
 
-<div class="product-box">
-<b>Professionell / Landwirtschaft</b><br>
-Netafim Techline AS Dripline<br>
-<a href="https://www.netafim.com/de/produkte/techline/" target="_blank">Zum Produkt</a>
-</div>
+      <!-- content preserved -->
+      <h2>Tröpfchenbewässerung</h2>
 
-<div class="product-box">
-<b>Preis-Leistung</b><br>
-Rain Bird XF Dripline<br>
-<a href="https://www.rainbird.com/products/xf-dripline" target="_blank">Zum Produkt</a>
-</div>
+      <p>
+      Die Tröpfchenbewässerung gibt Wasser sehr sparsam (ca. 2–4 l/h) direkt an die Wurzeln ab.
+      Sie wird weltweit im Gartenbau, Weinbau sowie in Hausgärten eingesetzt.
+      Moderne Systeme arbeiten druckkompensiert und lassen sich automatisieren.
+      </p>
 
-<!-- ================================================= -->
-<!-- SPRINKLER -->
-<!-- ================================================= -->
-<h2>Sprinklerbewässerung</h2>
+      <table>
+        <tr>
+          <th>Vorteile</th>
+          <th>Nachteile</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Sehr hohe Wassereffizienz</li>
+              <li>Geringe Verdunstung</li>
+              <li>Blätter bleiben trocken</li>
+              <li>Ideal für Beete & Reihen</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Tropfer können verstopfen</li>
+              <li>Regelmäßige Wartung nötig</li>
+              <li>Aufwendiger bei großen Flächen</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
 
-<p>
-Sprinkler verteilen Wasser durch Druck über größere Flächen.
-Sie eignen sich besonders für Rasenflächen und Sportanlagen.
-</p>
+      <h3>Empfohlene Produkte</h3>
 
-<table>
-  <tr>
-    <th>Vorteile</th>
-    <th>Nachteile</th>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Große Flächenabdeckung</li>
-        <li>Einfache Installation</li>
-        <li>Ideal für Rasen</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Hohe Verdunstung</li>
-        <li>Weniger effizient</li>
-        <li>Blätter bleiben nass</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+      <div class="product-box">
+        <b>Bestes Gesamtprodukt (Privatgarten)</b><br>
+        Gardena Micro-Drip-System Starter Set<br>
+        <a href="https://www.gardena.com/de/produkte/bewaesserung/micro-drip/" target="_blank">Zum Produkt</a>
+      </div>
 
-<h3>Empfohlene Produkte</h3>
+      <div class="product-box">
+        <b>Professionell / Landwirtschaft</b><br>
+        Netafim Techline AS Dripline<br>
+        <a href="https://www.netafim.com/de/produkte/techline/" target="_blank">Zum Produkt</a>
+      </div>
 
-<div class="product-box">
-<b>Bestes Profi-Produkt</b><br>
-Rain Bird 5000 Series Versenkregner<br>
-<a href="https://www.rainbird.com/de/products/5000-series-rotor" target="_blank">Zum Produkt</a>
-</div>
+      <div class="product-box">
+        <b>Preis-Leistung</b><br>
+        Rain Bird XF Dripline<br>
+        <a href="https://www.rainbird.com/products/xf-dripline" target="_blank">Zum Produkt</a>
+      </div>
 
-<div class="product-box">
-<b>Preis-Leistung / Privat</b><br>
-Gardena AquaZoom Flächenregner<br>
-<a href="https://www.gardena.com/de/produkte/bewaesserung/rasenregner/" target="_blank">Zum Produkt</a>
-</div>
+      <!-- rest of content preserved below -->
 
-<!-- ================================================= -->
-<!-- UNTERFLUR -->
-<!-- ================================================= -->
-<h2>Unterflur- / Subsurface-Bewässerung</h2>
+      <h2>Sprinklerbewässerung</h2>
 
-<p>
-Bei der Unterflurbewässerung liegen Tropfschläuche 5–20 cm unter der Erde.
-Das Wasser gelangt direkt in die Wurzelzone.
-</p>
+      <p>
+      Sprinkler verteilen Wasser durch Druck über größere Flächen.
+      Sie eignen sich besonders für Rasenflächen und Sportanlagen.
+      </p>
 
-<table>
-  <tr>
-    <th>Vorteile</th>
-    <th>Nachteile</th>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Nahezu keine Verdunstung</li>
-        <li>Unsichtbar</li>
-        <li>Sehr effizient</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Hohe Installationskosten</li>
-        <li>Reparaturen schwierig</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+      <table>
+        <tr>
+          <th>Vorteile</th>
+          <th>Nachteile</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Große Flächenabdeckung</li>
+              <li>Einfache Installation</li>
+              <li>Ideal für Rasen</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Hohe Verdunstung</li>
+              <li>Weniger effizient</li>
+              <li>Blätter bleiben nass</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
 
-<h3>Empfohlene Produkte</h3>
+      <h3>Empfohlene Produkte</h3>
 
-<div class="product-box">
-<b>Bestes Profi-System</b><br>
-Netafim Techline CV<br>
-<a href="https://www.netafim.com/de/produkte/techline-cv/" target="_blank">Zum Produkt</a>
-</div>
+      <div class="product-box">
+        <b>Bestes Profi-Produkt</b><br>
+        Rain Bird 5000 Series Versenkregner<br>
+        <a href="https://www.rainbird.com/de/products/5000-series-rotor" target="_blank">Zum Produkt</a>
+      </div>
 
-<!-- ================================================= -->
-<!-- OBERFLÄCHE -->
-<!-- ================================================= -->
-<h2>Oberflächenbewässerung</h2>
+      <div class="product-box">
+        <b>Preis-Leistung / Privat</b><br>
+        Gardena AquaZoom Flächenregner<br>
+        <a href="https://www.gardena.com/de/produkte/bewaesserung/rasenregner/" target="_blank">Zum Produkt</a>
+      </div>
 
-<p>
-Eine der ältesten Bewässerungsformen.
-Wasser verteilt sich durch Schwerkraft über die Bodenoberfläche.
-</p>
+      <h2>Unterflur- / Subsurface-Bewässerung</h2>
 
-<table>
-  <tr>
-    <th>Vorteile</th>
-    <th>Nachteile</th>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Sehr einfach</li>
-        <li>Günstig</li>
-        <li>Kein Strom nötig</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Sehr hoher Wasserverlust</li>
-        <li>Erosion möglich</li>
-        <li>Ungleichmäßige Verteilung</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+      <p>
+      Bei der Unterflurbewässerung liegen Tropfschläuche 5–20 cm unter der Erde.
+      Das Wasser gelangt direkt in die Wurzelzone.
+      </p>
 
-<h3>Empfohlen</h3>
+      <table>
+        <tr>
+          <th>Vorteile</th>
+          <th>Nachteile</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Nahezu keine Verdunstung</li>
+              <li>Unsichtbar</li>
+              <li>Sehr effizient</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Hohe Installationskosten</li>
+              <li>Reparaturen schwierig</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
 
-<div class="product-box">
-<b>Einfach & günstig</b><br>
-Gardena Classic Regner<br>
-<a href="https://www.gardena.com/de/produkte/bewaesserung/" target="_blank">Zum Produkt</a>
-</div>
+      <h3>Empfohlene Produkte</h3>
 
-<!-- ================================================= -->
-<!-- SMART -->
-<!-- ================================================= -->
-<h2>Automatische / Smart-Bewässerung</h2>
+      <div class="product-box">
+        <b>Bestes Profi-System</b><br>
+        Netafim Techline CV<br>
+        <a href="https://www.netafim.com/de/produkte/techline-cv/" target="_blank">Zum Produkt</a>
+      </div>
 
-<p>
-Smart-Systeme nutzen Sensoren und Apps, um die Bewässerung automatisch
-an Wetter und Bodenfeuchte anzupassen.
-</p>
+      <h2>Oberflächenbewässerung</h2>
 
-<table>
-  <tr>
-    <th>Vorteile</th>
-    <th>Nachteile</th>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Höchster Komfort</li>
-        <li>Sehr wassersparend</li>
-        <li>Automatisiert</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Teurer</li>
-        <li>Abhängig von Strom/WLAN</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+      <p>
+      Eine der ältesten Bewässerungsformen.
+      Wasser verteilt sich durch Schwerkraft über die Bodenoberfläche.
+      </p>
 
-<h3>Empfohlene Produkte</h3>
+      <table>
+        <tr>
+          <th>Vorteile</th>
+          <th>Nachteile</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Sehr einfach</li>
+              <li>Günstig</li>
+              <li>Kein Strom nötig</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Sehr hoher Wasserverlust</li>
+              <li>Erosion möglich</li>
+              <li>Ungleichmäßige Verteilung</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
 
-<div class="product-box">
-<b>Bestes Smart-System</b><br>
-Gardena Smart System<br>
-<a href="https://www.gardena.com/de/produkte/smart-system/" target="_blank">Zum Produkt</a>
-</div>
+      <h3>Empfohlen</h3>
 
-<div class="product-box">
-<b>Profi / Landwirtschaft</b><br>
-Rain Bird ESP-TM2 Controller<br>
-<a href="https://www.rainbird.com/products/esp-tm2-controller" target="_blank">Zum Produkt</a>
-</div>
+      <div class="product-box">
+        <b>Einfach & günstig</b><br>
+        Gardena Classic Regner<br>
+        <a href="https://www.gardena.com/de/produkte/bewaesserung/" target="_blank">Zum Produkt</a>
+      </div>
 
-<p style="margin-top:40px; font-size:0.9rem;">
-Hinweis: Die genannten Produkte sind Beispiele für bewährte Systeme.
-Die Auswahl hängt vom Einsatzgebiet, Budget und Wasserverfügbarkeit ab.
-</p>
+      <h2>Automatische / Smart-Bewässerung</h2>
+
+      <p>
+      Smart-Systeme nutzen Sensoren und Apps, um die Bewässerung automatisch
+      an Wetter und Bodenfeuchte anzupassen.
+      </p>
+
+      <table>
+        <tr>
+          <th>Vorteile</th>
+          <th>Nachteile</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Höchster Komfort</li>
+              <li>Sehr wassersparend</li>
+              <li>Automatisiert</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Teurer</li>
+              <li>Abhängig von Strom/WLAN</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <h3>Empfohlene Produkte</h3>
+
+      <div class="product-box">
+        <b>Bestes Smart-System</b><br>
+        Gardena Smart System<br>
+        <a href="https://www.gardena.com/de/produkte/smart-system/" target="_blank">Zum Produkt</a>
+      </div>
+
+      <div class="product-box">
+        <b>Profi / Landwirtschaft</b><br>
+        Rain Bird ESP-TM2 Controller<br>
+        <a href="https://www.rainbird.com/products/esp-tm2-controller" target="_blank">Zum Produkt</a>
+      </div>
+
+      <p style="margin-top:40px; font-size:0.9rem;">
+      Hinweis: Die genannten Produkte sind Beispiele für bewährte Systeme.
+      Die Auswahl hängt vom Einsatzgebiet, Budget und Wasserverfügbarkeit ab.
+      </p>
+
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 PlantCare – Bewässerungssysteme</p>
+    </footer>
+
+  </div> <!-- /#page-content-wrapper -->
+</div> <!-- /#wrapper -->
 
 </body>
 </html>

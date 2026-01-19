@@ -41,6 +41,59 @@ body {
   z-index: 1100; /* garantiert klickbar */
 }
 
+/* Responsive positioning for shared sidebar (desktop fixed, mobile off-canvas) */
+@media (min-width: 769px) {
+  #sidebar-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1030;
+  }
+
+  #page-content-wrapper {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+    z-index: 1040;
+    transition: left 0.25s ease;
+    background: #fff;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    left: 0;
+  }
+
+  #page-content-wrapper {
+    margin-left: 0;
+  }
+}
+
+/* Sidebar heading alignment to match top navbar */
+.sidebar-heading {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-weight: 700;
+}
+
 /* ================= HERO ================= */
 .hero {
   position: relative;

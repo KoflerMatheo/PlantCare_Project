@@ -239,6 +239,7 @@ table th {
 /* Top navbar subtle style */
 .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
 
+
 /* Bild unter der Überschrift */
 .system-image {
   width:100%;         /* passt sich der Containerbreite an */

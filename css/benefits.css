@@ -32,7 +32,7 @@ body {
 .page-header {
   text-align: center;
   padding: 60px 20px;
-  background-image: url("../pic/benemain.png");
+  background-image: url('../pic/benemain.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,6 +159,9 @@ table th {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* Make the navbar container flush with the content edge so the menu button aligns with the sidebar */
+.navbar .container-fluid { padding-left: 0; padding-right: 1rem; }
 
 .navbar .sidebar-search {
   margin-left: auto;

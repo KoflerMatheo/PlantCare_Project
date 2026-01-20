@@ -169,6 +169,31 @@ table th {
   .navbar .sidebar-search { width: 140px; }
 }
 
+/* Ensure sidebar sits fixed on the left for benefits page like index.html */
+@media (min-width: 769px) {
+  #sidebar-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1030;
+  }
+
+  #page-content-wrapper {
+    margin-left: 250px;
+  }
+
+  /* when wrapper has toggled class, hide sidebar like elsewhere */
+  #wrapper.toggled #sidebar-wrapper { margin-left: -250px; }
+  #wrapper.toggled #page-content-wrapper { margin-left: 0; }
+}
+
+@media (max-width: 768px) {
+  #sidebar-wrapper { left: -250px; }
+  #wrapper.toggled #sidebar-wrapper { left: 0; }
+  #page-content-wrapper { margin-left: 0; }
+}
+
 /* das weiße Fenster */
 .modal-box {
   background: white;

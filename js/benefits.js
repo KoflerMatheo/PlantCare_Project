@@ -18,6 +18,8 @@ if (modal && titleEl && textEl && imgEl) {
       let image = "";
       if (title && title.includes("Gleichmäßige Wasserversorgung")) {
         image = "../pic/Gelichmäßige_Wasserversorgung.png";
+      } else if (title && title.includes("Bessere Erträge")) {
+        image = "../pic/Bessere_Erträge.png";
       } else {
         image = "../pic/benemain.png"; // fallback image
       }

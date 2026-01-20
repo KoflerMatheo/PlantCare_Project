@@ -14,7 +14,13 @@ if (modal && titleEl && textEl && imgEl) {
       const title = h ? h.textContent : "";
       const text = p ? p.textContent : "";
 
-      const image = "deinbild.jpg";
+      // choose image based on card title (add more cases as needed)
+      let image = "";
+      if (title && title.includes("Gleichmäßige Wasserversorgung")) {
+        image = "../pic/Gelichmäßige_Wasserversorgung.png";
+      } else {
+        image = "../pic/benemain.png"; // fallback image
+      }
 
       titleEl.textContent = title;
       textEl.textContent = text;

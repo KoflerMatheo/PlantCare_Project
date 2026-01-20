@@ -6,6 +6,9 @@ body {
   color: #000000;
 }
 
+/* Primary color consistent with style.css */
+:root { --primary: #0d6efd; }
+
 /* Page content spacing (use shared sidebar rules from style.css) */
 #page-content-wrapper {
   padding: 1.5rem 2rem;
@@ -55,7 +58,7 @@ body {
 
 .benefit-section h2 {
   font-size: 32px;
-  color: #1ea89d;
+  color: #0d6efd;
 }
 
 .benefit-section ul {
@@ -84,12 +87,12 @@ body {
 .card:hover {
   transform: translateY(-6px); /* leicht schweben */
   box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* stärkerer Schatten */
-  border-color: #1ea89d; /* zarter Farbakzent beim Hover */
+  border-color: var(--primary); /* zarter Farbakzent beim Hover */
 }
 
 .card h3 {
   margin-top: 0;
-  color: #1ea89d;
+  color: var(--primary);
 }
 
 
@@ -106,11 +109,12 @@ table {
 
 table th, table td {
   padding: 12px;
-  border-bottom: 1px solid #cbe3df;
+  border-bottom: 1px solid var(--primary);
 }
 
 table th {
-  background: #e7f5f0;
+  background: var(--primary);
+  color: white;
 }
 
 /* Hintergrund der ganzen Seite abdunkeln */

@@ -53,16 +53,23 @@ body {
   width: 220px;
 }
 
-/* erlaubt */
+/* Normalize navbar spacing and ensure the menu button sits flush left */
 .navbar {
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  padding: 0; /* remove unexpected vertical padding differences */
 }
 
+.navbar .container-fluid {
+  padding: 0 1rem; /* consistent horizontal padding across pages */
+  align-items: center;
+}
 
-
-/* Ensure the search input and other controls vertically center */
-.navbar .sidebar-search, .navbar .btn {
-  vertical-align: middle;
+#sidebarToggle {
+  margin: 0; /* remove offsets */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 6px 10px;
 }
 
 /* Brand + logo on the right */
@@ -178,7 +185,17 @@ body {
   background-color: #f7fbfc; /* slightly warmer than wrapper to create subtle contrast */
 }
 
+.sidebar-search {
+  width: 140px;
+  padding: 6px 8px;
+  border: 1px solid #e6e9ee;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
 
+@media (max-width: 900px) {
+  .sidebar-search { width: 100px; }
+}
 
 /* ================= HERO ================= */
 .hero {

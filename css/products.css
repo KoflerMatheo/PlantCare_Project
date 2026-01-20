@@ -1,12 +1,15 @@
 
+    /* Primary color for this page (match style.css) */
+    :root { --primary: #0d6efd; }
+
     body {
-          font-family: Arial, sans-serif;
-          background: #f7fbfc;
-          margin: 0;
-              padding: 0;
-          color: #333;
-              line-height: 1.6;
-        }
+        font-family: Arial, sans-serif;
+        background: #f7fbfc;
+        margin: 0;
+          padding: 0;
+        color: #333;
+          line-height: 1.6;
+      }
 
     h1 {
       text-align: center;
@@ -15,25 +18,29 @@
 
     h2 {
       margin-top: 50px;
-        color: #1ea89d; /* Updated to match style.css */
+      margin-bottom: 0.75rem;
+      color: var(--primary);
     }
 
+    /* tables: add vertical spacing between rows for readability */
     table {
       width: 100%;
-      border-collapse: collapse;
+      border-collapse: separate;
+      border-spacing: 0 12px; /* vertical gap between rows */
       margin-top: 15px;
-      background: white;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      background: transparent;
     }
 
     th, td {
-      border: 1px solid #d7eae8;
-        color: #1ea89d; /* Updated to match style.css */
+      padding: 16px 14px;
+      background: #fff;
+      border: 1px solid #e9eef6;
       vertical-align: top;
     }
 
     th {
-      background: #e7f5f0;
+      background: var(--primary);
+      color: #fff;
       width: 25%;
       text-align: left;
     }
@@ -44,7 +51,7 @@
     }
 
     a {
-      color: #1ea89d; /* use same turquoise as style.css */
+      color: var(--primary);
       text-decoration: none;
       font-weight: 600;
     }
@@ -90,6 +97,22 @@
 #sidebar-wrapper .list-group-item {
   font-weight: 400;
 }
+
+/* Product boxes: stronger spacing and primary accent */
+.product-box {
+  background: #ffffff;
+  border-left: 6px solid var(--primary);
+  padding: 18px;
+  margin: 18px 0;
+  box-shadow: 0 6px 12px rgba(15,23,42,0.06);
+}
+
+/* Main-specific spacing target */
+.products-main p { margin-bottom: 1rem; }
+.products-main h2 { padding-top: 0.5rem; }
+
+/* Ensure tables stretch and look airy */
+#page-content-wrapper table { width: 100%; }
 
 /* center content area and limit width for readability */
 #page-content-wrapper > main { max-width: 1100px; margin: 0 auto; }

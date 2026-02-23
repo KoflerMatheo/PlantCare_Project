@@ -72,11 +72,29 @@
   line-height: 1.4;
 }
 
-/* Navbar layout: align search to the right like on other pages */
+/* ================= NAVBAR — match style.css / benefits.css ================= */
+.navbar {
+  position: relative;
+  z-index: 1000; /* always above hero */
+  padding: 0; /* remove unexpected vertical padding differences */
+}
+
 .navbar .container-fluid {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 0 1rem; /* consistent horizontal padding across pages */
+}
+
+#sidebarToggle {
+  position: relative;
+  z-index: 1100; /* guarantee clickable */
+  margin: 8px 0; /* vertical spacing like style.css */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 6px 10px;
 }
 
 .navbar .sidebar-search {
@@ -84,14 +102,28 @@
   width: 220px;
 }
 
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-text { font-weight: 700; color: var(--primary); }
+.brand-logo { height: 28px; width: auto; display: inline-block; }
+
 @media (max-width: 900px) {
   .navbar .sidebar-search { width: 140px; }
 }
 
-/* Page content spacing consistent with other pages */
-#page-content-wrapper {
-  padding: 1.5rem 2rem;
+@media (max-width: 768px) {
+  .brand-text { display: none; }
+  .brand-logo { height: 22px; }
+  .navbar .sidebar-search { width: 120px; }
 }
+
+/* Page content spacing: keep navbar flush at top like other pages */
+#page-content-wrapper { padding: 0; }
 
 /* Sidebar: make list items normal weight on products page */
 #sidebar-wrapper .list-group-item {

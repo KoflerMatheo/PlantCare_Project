@@ -9,9 +9,9 @@ body {
 /* Primary color consistent with style.css */
 :root { --primary: #0d6efd; }
 
-/* Page content spacing (use shared sidebar rules from style.css) */
+/* Page content spacing (avoid moving the top navbar; keep content paddings inside sections) */
 #page-content-wrapper {
-  padding: 1.5rem 2rem;
+  padding: 0; /* navbar sits at the very top like on index; sections provide their own padding */
 }
 
 /* Header spacing */
@@ -24,7 +24,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  #page-content-wrapper { padding: 1rem; }
+  #page-content-wrapper { padding: 0; }
   .page-header { padding: 3rem 1rem; }
 }
 
@@ -167,7 +167,7 @@ table th {
 #sidebarToggle {
   position: relative;
   z-index: 1100; /* guarantee clickable */
-  margin: 0;
+  margin: 8px 0; /* add vertical spacing to match visual of style.css */
   display: inline-flex;
   align-items: center;
   justify-content: center;
